@@ -24,7 +24,6 @@ body {
   font-weight: 400;
   line-height: 2.4rem;
   margin: 1rem;
-  height: 200vh;
 }
 
 h1,
@@ -81,4 +80,15 @@ nav {
 
 .fa {
   color: var(--primary-color);
+}
+
+.headline-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/header-shapes.svg);
+  background-position: center;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
