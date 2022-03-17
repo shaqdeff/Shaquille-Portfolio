@@ -24,6 +24,7 @@ To get a local copy up and running follow these simple steps.
 - [Download the ZIP file from this location](https://github.com/shaqdeff/Microverse-Portfolio/archive/refs/heads/main.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
 
 ```
+
 git clone https://github.com/shaqdeff/Microverse-Portfolio.git
 
 ```
