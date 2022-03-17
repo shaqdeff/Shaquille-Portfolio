@@ -23,7 +23,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 h1,
@@ -47,10 +47,6 @@ h2 {
 h3 {
   font-size: 1.3rem;
   line-height: 1.6rem;
-}
-
-p {
-  margin-top: 0;
 }
 
 /* Header Section */
@@ -82,13 +78,36 @@ nav {
   color: var(--primary-color);
 }
 
+/* Headline Section */
 .headline-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
   background: url(/images/header-shapes.svg);
   background-position: center;
   background-size: 100vw;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
+}
+
+.headline-section h1 {
+  bottom: 2rem;
+  margin-left: 2.4rem;
+  position: relative;
+}
+
+.headline-section p {
+  bottom: 2.3rem;
+  margin-left: 2.4rem;
+  margin-top: 0;
+  position: relative;
+}
+
+.headline-section p:last-of-type {
+  bottom: 2.5rem;
+  color: #7f8cff;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
 }
