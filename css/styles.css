@@ -85,29 +85,43 @@ nav {
   flex-direction: column;
   background: url(/images/header-shapes.svg);
   background-position: center;
-  background-size: 100vw;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
-  position: relative;
 }
 
 .headline-section h1 {
-  bottom: 2rem;
+  bottom: 0.5rem;
   margin-left: 2.4rem;
   position: relative;
 }
 
 .headline-section p {
-  bottom: 2.3rem;
+  bottom: 0.5rem;
   margin-left: 2.4rem;
   margin-top: 0;
   position: relative;
 }
 
 .headline-section p:last-of-type {
-  bottom: 2.5rem;
+  bottom: 1rem;
   color: #7f8cff;
   font-weight: 400;
   margin-top: 0;
   position: relative;
+}
+
+.headline-section ul {
+  align-items: center;
+  bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  left: -3rem;
+  list-style: none;
+  margin-top: 0;
+  position: relative;
+}
+.headline-section ul li a {
+  padding: 1rem;
 }
