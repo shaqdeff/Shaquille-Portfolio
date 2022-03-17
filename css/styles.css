@@ -18,11 +18,11 @@ html {
 }
 
 body {
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
-  line-height: 2.4rem;
   font-weight: 400;
-  color: var(--text-color);
+  line-height: 2.4rem;
   margin: 1rem;
 }
 
@@ -51,4 +51,22 @@ h3 {
 
 p {
   margin-top: 0;
+}
+
+/* Header Section */
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 2.6rem 1.5rem;
+}
+
+/* Link */
+
+.logo {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
