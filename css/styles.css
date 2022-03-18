@@ -22,10 +22,10 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.4rem;
-  margin: 0.5rem;
+  margin: 0;
 }
 
 h1,
@@ -94,7 +94,7 @@ nav .fa {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 50px;
+  border-bottom-left-radius: 75px;
   height: 100vh;
   width: 100vw;
 }
@@ -113,7 +113,7 @@ nav .fa {
 }
 
 .headline-section p:last-of-type {
-  bottom: 0.6rem;
+  bottom: 0.9rem;
   color: #7f8cff;
   font-weight: 400;
   margin-top: 0;
@@ -135,37 +135,36 @@ nav .fa {
   padding: 1rem;
 }
 
+/* Works Section */
 .works {
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh;
-  margin-top: 10rem;
   justify-items: center;
 }
 
 .card {
-  /* align-items: center; */
   background: var(--body-color);
-  border-radius: 15px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-  min-height: 55rem;
-  position: relative;
-  width: 35rem;
+  margin-top: 10rem;
+  height: 58rem;
+  width: 34rem;
 }
 
 .card__image {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  width: 330px;
-  height: 250px;
+  display: flex;
+  align-items: flex-start;
+  margin: 1.5rem;
 }
 
 .card__title {
+  display: flex;
+  justify-content: flex-start;
   position: relative;
-  top: 25rem;
-  left: 2rem;
+  bottom: 3.5rem;
+  left: 1.5rem;
 }
 
 .card__subtitle {
@@ -173,11 +172,60 @@ nav .fa {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  top: 23rem;
-  left: 1.7rem;
-  width: 26rem;
+  bottom: 5rem;
+  left: 1.2rem;
+  width: 24rem;
 }
 
 .light-text {
   color: #7a869a;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.6rem;
+}
+
+.card__body p {
+  bottom: 7.3rem;
+  position: relative;
+}
+
+.categories {
+  align-items: center;
+  bottom: 9rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
+  left: -4.2rem;
+  list-style: none;
+  position: relative;
+}
+
+.categories li {
+  background: #ebebff;
+  color: #6070ff;
+  font-size: 1.2rem;
+  padding: 1px 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  border: 1px solid #396df2;
+  outline: none;
+  background: #fff;
+  color: #396df2;
+  text-align: center;
+  width: 12rem;
+  padding: 1.3rem 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  letter-spacing: 0.03rem;
+  position: relative;
+  bottom: 8rem;
 }
