@@ -51,6 +51,7 @@ h3 {
   font-weight: 600;
   line-height: 1.6rem;
 }
+
 /* Header Section */
 
 header {
@@ -63,6 +64,7 @@ header {
   width: 100vw;
   z-index: 1;
 }
+
 /* Links and Navigation */
 
 .logo {
@@ -108,12 +110,15 @@ nav .fa {
   margin-top: 0;
   position: relative;
 }
+
 /* For Works Section */
 .card__body p {
   bottom: 7.3rem;
   position: relative;
 }
+
 /* --------- */
+
 /* For About Section */
 .about-section p {
   bottom: 0.5rem;
@@ -130,6 +135,7 @@ nav .fa {
   margin-top: 0;
   position: relative;
 }
+
 /* -------- */
 .headline-section p:last-of-type {
   bottom: 0.9rem;
