@@ -115,6 +115,7 @@ nav .fa {
 .headline-section p:last-of-type {
   bottom: 0.9rem;
   color: #7f8cff;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-top: 0;
   position: relative;
@@ -247,4 +248,72 @@ nav .fa {
 
 .btn:disabled {
   background: #5e6c84;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--body-color);
+  margin-top: 10rem;
+  height: 100vh;
+  width: 100vw;
+  border-top-right-radius: 75px;
+}
+
+.about-section h1 {
+  top: -14rem;
+  margin-left: 2.4rem;
+  position: relative;
+}
+
+.about-section p {
+  bottom: 14rem;
+  margin-left: 2.4rem;
+  margin-top: 0;
+  position: relative;
+}
+
+.about-section p:last-of-type {
+  bottom: 14rem;
+  color: #7f8cff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+}
+
+.about-section ul {
+  align-items: center;
+  bottom: 14rem;
+  display: flex;
+  flex-direction: row;
+  left: -3rem;
+  list-style: none;
+  margin-top: 0;
+  position: relative;
+}
+
+.about-section ul li a {
+  padding: 1rem;
+}
+
+.btn-about {
+  background: var(--body-color);
+  border-radius: 15px;
+  border: 1px solid #396df2;
+  bottom: 14rem;
+  left: 1.7rem;
+  color: #396df2;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  outline: none;
+  padding: 1rem 0.3rem;
+  position: relative;
+  text-align: center;
+  width: 16rem;
+  white-space: nowrap;
 }
