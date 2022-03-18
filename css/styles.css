@@ -49,38 +49,43 @@ h2 {
 h3 {
   font-size: 1.3rem;
   line-height: 1.6rem;
+  font-weight: 600;
 }
 
 /* Header Section */
 
 header {
   align-items: center;
-  display: inline-flex;
+  background: var(--body-color);
+  display: flex;
   justify-content: space-between;
-  margin: 2.6rem 1.5rem;
   position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
 }
 
 /* Links and Navigation */
 
-nav {
-  position: fixed;
-  right: 3rem;
-}
-
 .logo {
-  text-decoration: none;
   color: var(--primary-color);
   font-size: 1.8rem;
-  line-height: 2rem;
   font-weight: 700;
+  line-height: 2rem;
+  margin-left: 2rem;
+  margin-top: 1.8rem;
+  padding: 1.2rem 0.2rem;
+  text-decoration: none;
 }
 
-.fa {
+nav .fa {
   color: var(--primary-color);
+  margin-top: 1.8rem;
+  margin-right: 2rem;
 }
 
 /* Headline Section */
+
 .headline-section {
   display: flex;
   justify-content: center;
@@ -90,7 +95,8 @@ nav {
   background-size: 100%;
   background-repeat: no-repeat;
   border-bottom-left-radius: 50px;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
 }
 
 .headline-section h1 {
@@ -131,7 +137,47 @@ nav {
 
 .works {
   display: grid;
-  grid-template: repeat(4, 20rem) / repeat(1, 30rem);
+  grid-template-columns: 1fr;
   min-height: 100vh;
   margin-top: 10rem;
+  justify-items: center;
+}
+
+.card {
+  /* align-items: center; */
+  background: var(--body-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 55rem;
+  position: relative;
+  width: 35rem;
+}
+
+.card__image {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 330px;
+  height: 250px;
+}
+
+.card__title {
+  position: relative;
+  top: 25rem;
+  left: 2rem;
+}
+
+.card__subtitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 23rem;
+  left: 1.7rem;
+  width: 26rem;
+}
+
+.light-text {
+  color: #7a869a;
 }
