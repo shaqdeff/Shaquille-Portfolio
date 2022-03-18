@@ -112,6 +112,26 @@ nav .fa {
   position: relative;
 }
 
+/* For Works Section */
+
+.card__body p {
+  bottom: 7.3rem;
+  position: relative;
+}
+/* --------- */
+
+/* For About Section */
+
+.about-section p:last-of-type {
+  bottom: 1rem;
+  color: #7f8cff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+}
+/* -------- */
+
 .headline-section p:last-of-type {
   bottom: 0.9rem;
   color: #7f8cff;
@@ -194,11 +214,6 @@ nav .fa {
   margin: 1.6rem;
 }
 
-.card__body p {
-  bottom: 7.3rem;
-  position: relative;
-}
-
 .categories {
   align-items: center;
   bottom: 9rem;
@@ -263,23 +278,14 @@ nav .fa {
 }
 
 .about-section h1 {
-  top: 0rem;
+  top: 0;
   margin-left: 2.4rem;
   position: relative;
 }
 
 .about-section p {
-  bottom: 1rem;
+  bottom: 0.5rem;
   margin-left: 2.4rem;
-  margin-top: 0;
-  position: relative;
-}
-
-.about-section p:last-of-type {
-  bottom: 1rem;
-  color: #7f8cff;
-  font-size: 1.6rem;
-  font-weight: 400;
   margin-top: 0;
   position: relative;
 }
