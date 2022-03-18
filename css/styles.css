@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #6070ff;
-  --headings-color: #172b4d;
-  --text-color: #344563;
-  --body-color: #fff;
   --background-color: #e5e5e5;
+  --body-color: #fff;
+  --headings-color: #172b4d;
+  --primary-color: #6070ff;
+  --text-color: #344563;
 }
 
 *,
@@ -48,8 +48,8 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
-  line-height: 1.6rem;
   font-weight: 600;
+  line-height: 1.6rem;
 }
 
 /* Header Section */
@@ -94,9 +94,9 @@ nav .fa {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 75px;
   height: 100vh;
   width: 100vw;
+  border-bottom-left-radius: 75px;
 }
 
 .headline-section h1 {
@@ -136,6 +136,7 @@ nav .fa {
 }
 
 /* Works Section */
+
 .works {
   display: grid;
   grid-template-columns: 1fr;
@@ -149,31 +150,35 @@ nav .fa {
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
-  height: 58rem;
+  height: 57rem;
   width: 34rem;
 }
 
+.card--two {
+  height: 61rem;
+}
+
 .card__image {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   margin: 1.5rem;
 }
 
 .card__title {
+  bottom: 3.5rem;
   display: flex;
   justify-content: flex-start;
-  position: relative;
-  bottom: 3.5rem;
   left: 1.5rem;
+  position: relative;
 }
 
 .card__subtitle {
+  align-items: center;
+  bottom: 5rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  position: relative;
-  bottom: 5rem;
   left: 1.2rem;
+  position: relative;
   width: 24rem;
 }
 
@@ -207,25 +212,39 @@ nav .fa {
 
 .categories li {
   background: #ebebff;
+  border-radius: 10px;
   color: #6070ff;
   font-size: 1.2rem;
   padding: 1px 10px;
-  border-radius: 10px;
 }
 
 .btn {
+  background: var(--body-color);
+  border-radius: 15px;
   border: 1px solid #396df2;
-  outline: none;
-  background: #fff;
+  bottom: 8rem;
   color: #396df2;
-  text-align: center;
-  width: 12rem;
-  padding: 1.3rem 0.3rem;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  border-radius: 15px;
   letter-spacing: 0.03rem;
+  outline: none;
+  padding: 1.3rem 0.3rem;
   position: relative;
-  bottom: 8rem;
+  text-align: center;
+  width: 12rem;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  box-shadow: 3px 6px 16px rgba(64, 83, 252, 0.24);
+  color: var(--body-color);
+}
+
+.btn:active {
+  background: #2230d2;
+}
+
+.btn:disabled {
+  background: #5e6c84;
 }
