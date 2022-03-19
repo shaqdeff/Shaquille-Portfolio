@@ -282,10 +282,11 @@ nav .fa {
   border-top-right-radius: 75px;
 }
 
-.about-section h1 {
+.about-section h2 {
   top: 0;
   margin-left: 2.4rem;
   position: relative;
+  font-size: 4rem;
 }
 
 .icon-list {
