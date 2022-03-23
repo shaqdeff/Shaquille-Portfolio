@@ -26,6 +26,7 @@ body {
   font-weight: 400;
   line-height: 2.4rem;
   margin: 0;
+  height: 100vh;
 }
 
 h1,
@@ -50,6 +51,10 @@ h3 {
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.6rem;
+}
+
+form ul li {
+  list-style: none;
 }
 
 /* Header Section */
@@ -121,14 +126,25 @@ nav .fa {
 
 /* For About Section */
 .about-section p {
-  bottom: 0.5rem;
+  bottom: 3rem;
   margin-left: 2.4rem;
   margin-top: 0;
   position: relative;
 }
 
+.contact-form p {
+  color: #ebebff;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2.6rem;
+  position: relative;
+  top: -1rem;
+  letter-spacing: 0.03rem;
+}
+
 .about-section p:last-of-type {
-  bottom: 1rem;
+  bottom: 1.5rem;
   color: #7f8cff;
   font-size: 1.6rem;
   font-weight: 400;
@@ -277,13 +293,13 @@ nav .fa {
   flex-direction: column;
   background: var(--body-color);
   margin-top: 10rem;
-  height: 120vh;
+  height: 130vh;
   width: 100vw;
   border-top-right-radius: 75px;
 }
 
 .about-section h2 {
-  top: 0;
+  top: -3rem;
   margin-left: 2.4rem;
   position: relative;
   font-size: 4rem;
@@ -398,4 +414,81 @@ nav .fa {
 .skills-title .fa {
   position: relative;
   left: 7.7rem;
+}
+
+.form-container {
+  background: #fff;
+  margin-top: 0;
+  padding-bottom: 2rem;
+  position: relative;
+  top: -4.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.5rem;
+  background: var(--primary-color) url(/images/contact-form-shapes-mobile.svg);
+  background-position: right;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  border-top-left-radius: 75px;
+}
+
+.contact-form h2 {
+  color: var(--body-color);
+  position: relative;
+  top: 1rem;
+  font-size: 4rem;
+  letter-spacing: 0.03rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3.6rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 35rem;
+  border: none;
+  outline: none;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  color: var(--headings-color);
+}
+
+textarea {
+  width: 35rem;
+  height: 20rem;
+  resize: none;
+  border-radius: 8px;
+  color: #b3bac5;
+  padding: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.04rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.btn-contact {
+  position: relative;
+  bottom: 0;
+  left: -8rem;
+  letter-spacing: 0.05rem;
+  white-space: nowrap;
+  width: 15rem;
+  text-align: center;
 }
