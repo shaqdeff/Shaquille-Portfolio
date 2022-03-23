@@ -83,6 +83,10 @@ header {
   text-decoration: none;
 }
 
+.nav-links {
+  display: none;
+}
+
 nav .fa {
   color: var(--primary-color);
   margin-top: 1.8rem;
@@ -98,7 +102,7 @@ nav .fa {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 97vh;
   width: 100vw;
   border-bottom-left-radius: 75px;
 }
@@ -107,13 +111,23 @@ nav .fa {
   bottom: 0.5rem;
   margin-left: 2.4rem;
   position: relative;
+  font-size: 4.5rem;
+  padding-right: 1rem;
+}
+
+.intro-heading {
+  bottom: 5rem;
+  margin-left: 2.4rem;
+  position: relative;
 }
 
 .headline-section p {
   bottom: 0.5rem;
   margin-left: 2.4rem;
+  margin-right: 2rem;
   margin-top: 0;
   position: relative;
+  font-size: 1.5rem;
 }
 
 /* For Works Section */
@@ -154,7 +168,7 @@ nav .fa {
 
 /* -------- */
 .headline-section p:last-of-type {
-  bottom: 0.9rem;
+  bottom: 0.3rem;
   color: #7f8cff;
   font-size: 1.6rem;
   font-weight: 400;
@@ -164,7 +178,7 @@ nav .fa {
 
 .header-icons {
   align-items: center;
-  bottom: 1.5rem;
+  bottom: 0.8rem;
   display: flex;
   flex-direction: row;
   left: -2.8rem;
@@ -505,7 +519,88 @@ textarea {
   }
 
   h1 {
-    font-size: 4.8rem;
+    font-size: 5.3rem;
     line-height: 6rem;
+    letter-spacing: 0.05rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+  }
+
+  header {
+    height: 7rem;
+    padding-bottom: 2.5rem;
+  }
+
+  nav {
+    margin-right: 9rem;
+    margin-top: 2.5rem;
+  }
+
+  .logo {
+    margin-left: 15rem;
+    margin-top: 2.5rem;
+    padding: 0;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links li {
+    padding-right: 6rem;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 2rem;
+  }
+
+  nav .fa {
+    display: none;
+  }
+
+  .headline-section {
+    height: 90vh;
+    background: var(--body-color) url(/images/desktop-header-bg.svg);
+    background-position: center;
+    background-size: 100% 99%;
+    border-bottom-left-radius: 150px;
+    margin-top: 6.5rem;
+  }
+
+  .headline-section h1 {
+    margin-left: 40rem;
+    top: -2rem;
+  }
+
+  .headline-section p {
+    margin-left: 40rem;
+    width: 100rem;
+    top: -2rem;
+    letter-spacing: 0.03rem;
+    font-size: 2rem;
+  }
+
+  .headline-section p:last-of-type {
+    margin-left: 40rem;
+    font-size: 1.8rem;
+  }
+
+  .header-icons {
+    margin-left: 37.5rem;
+    top: -2rem;
   }
 }
