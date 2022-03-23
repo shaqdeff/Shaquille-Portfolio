@@ -440,3 +440,43 @@ nav .fa {
   position: relative;
   top: -1rem;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3.6rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+form ul li {
+  list-style: none;
+}
+
+input[type="text"], input[type="email"] {
+  width: 35rem;
+  border: none;
+  outline: none;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  color: var(--headings-color);
+}
+
+textarea {
+  width: 35rem;
+  height: 20rem;
+  resize: none;
+  border-radius: 8px;
+  color: #b3bac5;
+  padding: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.04rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
