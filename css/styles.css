@@ -53,6 +53,10 @@ h3 {
   line-height: 1.6rem;
 }
 
+form ul li {
+  list-style: none;
+}
+
 /* Header Section */
 
 header {
@@ -126,6 +130,17 @@ nav .fa {
   margin-left: 2.4rem;
   margin-top: 0;
   position: relative;
+}
+
+.contact-form p {
+  color: #ebebff;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2.6rem;
+  position: relative;
+  top: -1rem;
+  letter-spacing: 0.03rem;
 }
 
 .about-section p:last-of-type {
@@ -432,17 +447,6 @@ nav .fa {
   letter-spacing: 0.03rem;
 }
 
-.contact-form p {
-  color: #ebebff;
-  line-height: 2.8rem;
-  text-align: center;
-  font-size: 2rem;
-  margin: 2.6rem;
-  position: relative;
-  top: -1rem;
-  letter-spacing: 0.03rem;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -451,10 +455,6 @@ form {
   margin-right: 3.6rem;
   position: relative;
   bottom: 1rem;
-}
-
-form ul li {
-  list-style: none;
 }
 
 input[type="text"],
@@ -485,7 +485,7 @@ textarea {
 
 .btn-contact {
   position: relative;
-  bottom: 0rem;
+  bottom: 0;
   left: -8rem;
   letter-spacing: 0.05rem;
   white-space: nowrap;
