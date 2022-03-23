@@ -24,6 +24,11 @@
     <header>
       <a href="" class="logo">Shaquille</a>
       <nav>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
         <i class="fa fa-bars"></i>
       </nav>
     </header>
@@ -71,7 +76,7 @@
 
     <!-- Works Section -->
 
-    <section class="works">
+    <section id="portfolio" class="works">
       <section class="card">
         <img class="card__image" src="images/tonic1.svg" alt="Tonic icon" />
         <h2 class="card__title">Tonic</h2>
@@ -183,7 +188,7 @@
         </div>
       </section>
     </section>
-    <section class="about-section">
+    <section id="about" class="about-section">
       <h2>
         About <br />
         Myself
@@ -243,7 +248,7 @@
       </span>
       <hr class="solid" />
     </section>
-    <footer class="form-container">
+    <footer id="contact" class="form-container">
       <section class="contact-form">
         <h2>Contact me</h2>
         <p>
@@ -257,20 +262,13 @@
               <input
                 type="text"
                 name="name"
-                value="Yeremias"
                 placeholder="Full name"
                 required
                 maxlength="30"
               />
             </li>
             <li>
-              <input
-                type="email"
-                name="email"
-                value="natajayanj14@gmail.com"
-                placeholder="Email"
-                required
-              />
+              <input type="email" name="email" placeholder="Email" required />
             </li>
             <li>
               <textarea
