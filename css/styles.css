@@ -928,7 +928,7 @@ textarea {
   }
 
   .form-container {
-    top: -15rem;
+    top: -12rem;
     height: 100vh;
     width: 100%;
   }
@@ -960,6 +960,12 @@ textarea {
   .btn-contact {
     left: 1.2rem;
     width: 16rem;
+  }
+
+  .btn-contact:hover {
+    background: #7f8cff;
+    box-shadow: 3px 6px 16px rgba(64, 83, 252, 0.24);
+    color: var(--body-color);
   }
 
   .about-section p:last-of-type {
