@@ -633,7 +633,6 @@ textarea {
   .headline-section {
     height: 90vh;
     background: var(--body-color) url(/images/desktop-header-bg.svg);
-    background-size: 100%;
     background-position: center;
     background-size: 100% 99%;
     border-bottom-left-radius: 175px;
