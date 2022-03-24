@@ -157,25 +157,6 @@ nav .fa {
   letter-spacing: 0.03rem;
 }
 
-.about-section p:last-of-type {
-  bottom: 1.5rem;
-  color: #7f8cff;
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-top: 0;
-  position: relative;
-}
-
-/* -------- */
-.headline-section p:last-of-type {
-  bottom: 0.3rem;
-  color: #7f8cff;
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-top: 0;
-  position: relative;
-}
-
 .header-icons {
   align-items: center;
   bottom: 0.8rem;
@@ -561,6 +542,24 @@ textarea {
   white-space: nowrap;
   width: 15rem;
   text-align: center;
+}
+
+.about-section p:last-of-type {
+  bottom: 1.5rem;
+  color: #7f8cff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+}
+
+.headline-section p:last-of-type {
+  bottom: 0.3rem;
+  color: #7f8cff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
