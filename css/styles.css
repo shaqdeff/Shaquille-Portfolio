@@ -237,7 +237,15 @@ nav .fa {
     display: none;
   }
 
-  .card__subtitle2 {
+  .title__desk {
+    display: none;
+  }
+
+  .subtitle__desk {
+    display: none;
+  }
+
+  .card__subtitle3 {
     display: none;
   }
 
@@ -267,6 +275,16 @@ nav .fa {
 }
 
 .card__subtitle {
+  align-items: center;
+  bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  left: 1.2rem;
+  position: relative;
+  width: 24rem;
+}
+
+.card__subtitle2 {
   align-items: center;
   bottom: 5rem;
   display: flex;
@@ -617,6 +635,7 @@ textarea {
     background-size: 100% 99%;
     border-bottom-left-radius: 150px;
     margin-top: 6.5rem;
+    width: 100vw;
   }
 
   .headline-section h1 {
@@ -669,7 +688,7 @@ textarea {
   }
 
   .card__title {
-    top: 3rem;
+    display: none;
   }
 
   .card__title4 {
@@ -686,22 +705,38 @@ textarea {
     padding-top: 2.5rem;
   }
 
-  .card__subtitle {
+  .subtitle__desk {
     gap: 2rem;
     white-space: nowrap;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    position: relative;
+    left: 1.2rem;
+    width: 24rem;
+    bottom: 5rem;
+    align-items: center;
     font-size: 1.9rem;
   }
 
+  .card__subtitle {
+    display: none;
+  }
+
   .card__subtitle2 {
+    display: none;
+  }
+
+  .card__subtitle3 {
     gap: 2rem;
     white-space: nowrap;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     font-size: 1.9rem;
+    position: relative;
+    top: -5rem;
+    left: 1.3rem;
   }
 
   .card__subtitlemobi {
@@ -720,7 +755,7 @@ textarea {
   .para-desk {
     position: relative;
     left: -0.5rem;
-    width: 65rem;
+    width: 62rem;
     font-weight: 400;
   }
 
@@ -771,13 +806,43 @@ textarea {
     padding-top: 5rem;
   }
 
+  .title__desk {
+    bottom: 3.5rem;
+    display: flex;
+    justify-content: flex-start;
+    left: 1.5rem;
+    position: relative;
+    top: 3rem;
+    white-space: nowrap;
+  }
+
   .card-items2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    left: 40rem;
+    left: 37rem;
     padding-top: 10.5rem;
+  }
+
+  .card-items3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    left: -31.7rem;
+    padding-top: 6rem;
+  }
+
+  .card-items4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    left: 37rem;
+    padding-top: 8.5rem;
   }
 }
