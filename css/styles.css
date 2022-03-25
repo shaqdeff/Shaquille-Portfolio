@@ -601,6 +601,57 @@ textarea {
     margin-right: 9rem;
     margin-top: 2.5rem;
   }
+  /* Animations and Transformations */
+
+  nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--primary-color);
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
+  }
+
+  .logo:hover {
+    color: #7783f0;
+  }
+
+  .move-text:hover {
+    transform: translate(30px);
+  }
+
+  .image-scale:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(45deg);
+    }
+
+    25% {
+      transform: rotate(90deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animation-rotate {
+    animation: rotate 0.5s linear 1s;
+  }
+
+  /* ---------- */
 
   .logo {
     margin-left: 15rem;
@@ -650,6 +701,7 @@ textarea {
     top: -2rem;
     letter-spacing: 0.03rem;
     font-size: 2rem;
+    transition: transform 0.5s;
   }
 
   .header-icons {
@@ -682,6 +734,7 @@ textarea {
     justify-content: flex-start;
     align-items: center;
     margin: 3rem;
+    transition: transform 0.5s;
   }
 
   .card__title {
@@ -785,6 +838,7 @@ textarea {
     left: -0.5rem;
     margin-top: 1rem;
     width: 13rem;
+    transition: background 0.4s ease-in;
   }
 
   .card--two {
