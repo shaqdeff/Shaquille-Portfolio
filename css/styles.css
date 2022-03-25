@@ -601,6 +601,27 @@ textarea {
     margin-right: 9rem;
     margin-top: 2.5rem;
   }
+  /* Animations and Transformations */
+
+  nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--primary-color);
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
+  }
+
+  .logo:hover {
+    color: #7783f0;
+  }
+
+  /* ---------- */
 
   .logo {
     margin-left: 15rem;
