@@ -629,7 +629,27 @@ textarea {
     transform: scale(1.05);
   }
 
+  @keyframes rotate {
+    0% {
+      transform: rotate(45deg);
+    }
 
+    25% {
+      transform: rotate(90deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animation-rotate {
+    animation: rotate 0.5s linear 1s;
+  }
 
   /* ---------- */
 
@@ -818,6 +838,7 @@ textarea {
     left: -0.5rem;
     margin-top: 1rem;
     width: 13rem;
+    transition: background 0.4s ease-in;
   }
 
   .card--two {
