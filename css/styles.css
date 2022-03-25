@@ -621,6 +621,16 @@ textarea {
     color: #7783f0;
   }
 
+  .move-text:hover {
+    transform: translate(30px);
+  }
+
+  .image-scale:hover {
+    transform: scale(1.05);
+  }
+
+
+
   /* ---------- */
 
   .logo {
@@ -671,6 +681,7 @@ textarea {
     top: -2rem;
     letter-spacing: 0.03rem;
     font-size: 2rem;
+    transition: transform 0.5s;
   }
 
   .header-icons {
@@ -703,6 +714,7 @@ textarea {
     justify-content: flex-start;
     align-items: center;
     margin: 3rem;
+    transition: transform 0.5s;
   }
 
   .card__title {
