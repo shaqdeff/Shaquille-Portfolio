@@ -26,7 +26,9 @@ body {
   font-weight: 400;
   line-height: 2.4rem;
   margin: 0;
+  padding: 0;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 h1,
@@ -66,7 +68,7 @@ header {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
 }
 
@@ -94,6 +96,7 @@ nav .fa {
 }
 
 /* Headline Section */
+
 .headline-section {
   display: flex;
   justify-content: center;
@@ -103,7 +106,6 @@ nav .fa {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 97vh;
-  width: 100%;
   border-bottom-left-radius: 75px;
 }
 
@@ -345,7 +347,6 @@ nav .fa {
   background: var(--body-color);
   margin-top: 10rem;
   height: 130vh;
-  width: 100vw;
   border-top-right-radius: 75px;
 }
 
@@ -401,7 +402,7 @@ nav .fa {
   left: -1rem;
   position: relative;
   top: 4.5rem;
-  padding-bottom: 2rem;
+  width: 40rem;
 }
 
 .language-list {
@@ -439,6 +440,7 @@ nav .fa {
   top: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 40rem;
 }
 
 .solid {
@@ -454,17 +456,17 @@ nav .fa {
   font-size: 2rem;
   font-weight: 500;
   justify-content: space-around;
-  left: -1rem;
+  left: 0.5rem;
   position: relative;
   top: 2rem;
-  width: 80%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 26.3rem;
 }
 
 .skills-title .fa {
   position: relative;
-  left: 7.6rem;
+  left: 10.5rem;
 }
 
 .form-container {
@@ -472,7 +474,7 @@ nav .fa {
   margin-top: 0;
   padding-bottom: 2rem;
   position: relative;
-  top: -4.5rem;
+  top: -4.3rem;
 }
 
 .contact-form {
@@ -480,13 +482,12 @@ nav .fa {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4.5rem;
+  margin-top: 4.3rem;
   background: var(--primary-color) url(/images/contact-form-shapes-mobile.svg);
   background-position: right;
   background-size: 65%;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
   border-top-left-radius: 75px;
 }
 
@@ -567,12 +568,12 @@ textarea {
     font-size: 2rem;
     line-height: 2.8rem;
     height: 100vh;
-    width: 100vw;
   }
 
   h1,
   h2 {
     color: #091e42;
+    transition: transform 0.5s;
   }
 
   h1 {
@@ -625,6 +626,10 @@ textarea {
     transform: translate(30px);
   }
 
+  .text-scale:hover {
+    transform: scale(1.05);
+  }
+
   .image-scale:hover {
     transform: scale(1.05);
   }
@@ -649,6 +654,36 @@ textarea {
 
   .animation-rotate {
     animation: rotate 0.5s linear 1s;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(750px);
+    }
+
+    15% {
+      transform: perspective(-200px) translateZ(-50px);
+      color: #838ffc;
+    }
+
+    25% {
+      transform: perspective(-200px) translateZ(-100px);
+      color: #aab3ff;
+    }
+
+    50% {
+      transform: perspective(-200px) translateZ(-150px);
+      color: #d3d7fc;
+    }
+
+    100% {
+      transform: scale(1.2);
+      color: #ebedff;
+    }
+  }
+
+  .animation-slide {
+    animation: slide 0.7s ease-out 1.3s;
   }
 
   /* ---------- */
@@ -687,7 +722,6 @@ textarea {
     background-size: 100% 99%;
     border-bottom-left-radius: 175px;
     margin-top: 6.5rem;
-    width: 100%;
   }
 
   .headline-section h1 {
@@ -697,7 +731,7 @@ textarea {
 
   .headline-section p {
     margin-left: 40rem;
-    width: 100rem;
+    width: 50%;
     top: -2rem;
     letter-spacing: 0.03rem;
     font-size: 2rem;
@@ -807,6 +841,15 @@ textarea {
     left: -0.5rem;
     width: 62rem;
     font-weight: 400;
+    transition: transform 0.5s;
+  }
+
+  .para-desk2 {
+    position: relative;
+    left: -0.5rem;
+    width: 62rem;
+    font-weight: 400;
+    transition: transform 0.5s;
   }
 
   .categories {
@@ -900,7 +943,6 @@ textarea {
   .about-section {
     margin-top: 15rem;
     border-top-right-radius: 175px;
-    width: 100%;
     height: 100vh;
   }
 
@@ -909,7 +951,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 18rem;
+    margin-left: 22rem;
     margin-top: 26rem;
   }
 
@@ -926,13 +968,14 @@ textarea {
 
   .btn-about {
     width: 17rem;
+    height: 6rem;
     margin-left: 1.7rem;
   }
 
   .skills-container {
     width: 68rem;
     position: relative;
-    left: 100rem;
+    left: 120rem;
     bottom: 48rem;
   }
 
@@ -966,17 +1009,20 @@ textarea {
   }
 
   .solid {
-    width: 100%;
+    width: 70%;
+    position: relative;
+    left: -14rem;
   }
 
   .skills-title {
     display: flex;
     justify-content: space-between;
     font-size: 2.2rem;
+    left: -1rem;
   }
 
   .skills-title .fa {
-    left: 13.5rem;
+    left: 13.6rem;
   }
 
   .form-container {
