@@ -101,7 +101,8 @@ nav .fa {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: var(--body-color) url(/images/header-shapes.svg);
+  background: var(--body-color)
+    url(https://shaqdeff.github.io/Microverse-Portfolio/images/header-shapes.svg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -483,7 +484,8 @@ nav .fa {
   justify-content: center;
   align-items: center;
   margin-top: 4.3rem;
-  background: var(--primary-color) url(/images/contact-form-shapes-mobile.svg);
+  background: var(--primary-color)
+    url(https://shaqdeff.github.io/Microverse-Portfolio/images/contact-form-shapes-mobile.svg);
   background-position: right;
   background-size: 65%;
   background-repeat: no-repeat;
@@ -718,7 +720,8 @@ textarea {
 
   .headline-section {
     height: 90vh;
-    background: var(--body-color) url(/images/desktop-header-bg.svg);
+    background: var(--body-color)
+      url(https://shaqdeff.github.io/Microverse-Portfolio/images/desktop-header-bg.svg);
     background-position: center;
     background-size: 100% 99%;
     border-bottom-left-radius: 175px;
@@ -1033,7 +1036,8 @@ textarea {
   }
 
   .contact-form {
-    background: var(--primary-color) url(/images/contact-form-bg.svg);
+    background: var(--primary-color)
+      url(https://shaqdeff.github.io/Microverse-Portfolio/images/contact-form-bg.svg);
     background-size: cover;
     height: 120vh;
     width: 100%;
