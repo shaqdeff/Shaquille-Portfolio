@@ -101,7 +101,7 @@ nav .fa {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: 
+   background: 
     var(--body-color)
     url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
   background-position: center;
@@ -485,7 +485,7 @@ nav .fa {
   justify-content: center;
   align-items: center;
   margin-top: 4.3rem;
-  background: 
+   background: 
     var(--primary-color)
     url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
   background-position: right;
@@ -722,7 +722,7 @@ textarea {
 
   .headline-section {
     height: 90vh;
-    background: 
+     background: 
       var(--body-color)
       url(https://shaqdeff.github.io/Shaquille-Portfolio//images/desktop-header-bg.svg);
     background-position: center;
@@ -1039,7 +1039,7 @@ textarea {
   }
 
   .contact-form {
-    background: 
+     background: 
       var(--primary-color)
       url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
     background-size: cover;
