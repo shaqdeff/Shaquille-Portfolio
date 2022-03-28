@@ -43,6 +43,12 @@ git clone https://github.com/shaqdeff/Microverse-Portfolio.git
 - Twitter: [@shaquillendunda](https://twitter.com/shaquillendunda)
 - LinkedIn: [Shaquille Ndunda](https://www.linkedin.com/in/shaquille-ndunda-b13a95107/)
 
+👤 **Leonard Kombo**
+
+- GitHub: [@leonard33](https://github.com/leonard33)
+- Twitter: [@KomboLeonard1](https://twitter.com/KomboLeonard1)
+- LinkedIn: [Leonard Kombo](https://www.linkedin.com/in/leonard-kombo-b14532107/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
