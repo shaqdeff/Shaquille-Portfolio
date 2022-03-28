@@ -34,6 +34,7 @@ git clone https://github.com/shaqdeff/Microverse-Portfolio.git
 ## Deployment
 
 - After opening the files in Visual Studio Code, press the **Go Live** button on the status bar (bottom of the window) to launch the files with Live Server.
+- To view a live demo of the project you can click on this [link](https://shaqdeff.github.io/Microverse-Portfolio/).
 
 ## Authors
 
