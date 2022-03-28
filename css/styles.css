@@ -101,9 +101,9 @@ nav .fa {
   display: flex;
   justify-content: center;
   flex-direction: column;
-      background: 
-      var(--body-color)
-      url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
+  background: 
+  var(--body-color)
+  url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
