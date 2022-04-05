@@ -95,9 +95,9 @@ header {
   background: #6070ffe6;
   backdrop-filter: blur(5px);
   height: 100vh;
-  width: 400px;
+  width: 420px;
   top: 0;
-  right: -400px;
+  left: 420px;
   text-align: left;
   z-index: 2;
   transition: 1s;
@@ -147,7 +147,7 @@ header {
 nav .fa-times {
   color: var(--background-color);
   position: relative;
-  left: 37rem;
+  left: 33rem;
   margin: 1rem;
   font-size: 2.2rem;
   cursor: pointer;

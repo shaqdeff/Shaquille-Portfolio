@@ -1,8 +1,16 @@
 const navLinks = document.getElementById('navLinks');
+const showMenu = document.getElementById('menuBar');
+const hideMenu = document.getElementById('closeIcon');
+const closeMenu = document.getElementById('navItems');
 
-  function showMenu() {
-  navLinks.style.right = '0';
-}
-  function hideMenu() {
-  navLinks.style.right = '-400px';
-}
+showMenu.onclick = function showMenu() {
+  navLinks.style.left = '0';
+};
+
+hideMenu.onclick = function hideMenu() {
+  navLinks.style.left = '420px';
+};
+
+closeMenu.onclick = function hideMenu() {
+  navLinks.style.left = '420px';
+};
