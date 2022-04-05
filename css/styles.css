@@ -97,7 +97,7 @@ header {
   height: 100vh;
   width: 420px;
   top: 0;
-  left: 420px;
+  right: -420px;
   text-align: left;
   z-index: 2;
   transition: 1s;
