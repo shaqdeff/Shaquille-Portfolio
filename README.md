@@ -5,6 +5,7 @@ This is a personal portfolio project created using a Figma template.
 ## Built With
 
 - HTML & CSS
+- JavaScript
 
 ## Getting Started
 

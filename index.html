@@ -11,26 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/styles.css" />
-
     <!-- Icons -->
+
     <script
-      src="https://kit.fontawesome.com/eb57cf8ccf.js"
+      src="https://kit.fontawesome.com/dea05e00a8.js"
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <header>
       <a href="" class="logo animation-rotate">Shaquille</a>
       <nav>
-        <ul class="nav-links">
-          <li><a href="#portfolio">Portfolio</a></li>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" id="closeIcon"></i>
+          <ul id="navItems">
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menuBar"></i>
+      </nav>
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="fa fa-bars"></i>
       </nav>
     </header>
     <section class="headline-section">
@@ -72,7 +84,7 @@
     </section>
 
     <!-- Works Section -->
-    <section id="portfolio" class="works">
+    <div id="portfolio" class="works">
       <article class="card card-one">
         <img class="card__image" src="images/tonic1.svg" alt="Tonic image" />
         <img
@@ -81,8 +93,8 @@
           alt="Nature image"
         />
         <h2 class="card__title">Tonic</h2>
-        <h2 class="title__desk">Tonic</h2>
         <div class="card-items">
+          <h2 class="title__desk">Tonic</h2>
           <div class="card__subtitle">
             <h3>CANOPY</h3>
             <img src="images/counter.svg" alt="Counter icon" />
@@ -117,7 +129,7 @@
               <li>css</li>
               <li>javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button class="btn" type="button">See Project</button>
           </div>
         </div>
       </article>
@@ -136,8 +148,8 @@
           Multi-Post <br />
           Stories
         </h2>
-        <h2 class="card__title3">Multi-Post Stories</h2>
         <div class="card-items2">
+          <h2 class="card__title3">Multi-Post Stories</h2>
           <div class="card__subtitle">
             <h3>CANOPY</h3>
             <img src="images/counter.svg" alt="Counter icon" />
@@ -186,8 +198,8 @@
           alt="Facebook image"
         />
         <h2 class="card__title">Tonic</h2>
-        <h2 class="title__desk">Facebook 360</h2>
         <div class="card-items3">
+          <h2 class="title__desk2">Facebook 360</h2>
           <div class="card__subtitle">
             <h3>CANOPY</h3>
             <img src="images/counter.svg" alt="Counter icon" />
@@ -224,7 +236,7 @@
               <li>css</li>
               <li>javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button class="btn" type="button">See Project</button>
           </div>
         </div>
       </article>
@@ -243,8 +255,8 @@
           Multi-Post <br />
           Stories
         </h2>
-        <h2 class="card__title3">Uber Navigation</h2>
-        <div class="card-items4">
+        <div class="card-items2">
+          <h2 class="card__title3">Uber Navigation</h2>
           <div class="card__subtitle">
             <h3>CANOPY</h3>
             <img src="images/counter.svg" alt="Counter icon" />
@@ -280,11 +292,11 @@
               <li>css</li>
               <li>javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button class="btn" type="button">See Project</button>
           </div>
         </div>
       </article>
-    </section>
+    </div>
     <section id="about" class="about-section">
       <div class="about-items">
         <h2>
@@ -331,7 +343,7 @@
             /></a>
           </li>
         </ul>
-        <button class="btn btn-about">Get my resume</button>
+        <button class="btn btn-about" type="button">Get my resume</button>
       </div>
       <div class="skills-container">
         <span class="language-title">
@@ -394,5 +406,6 @@
         </form>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

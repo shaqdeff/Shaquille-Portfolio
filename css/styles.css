@@ -69,6 +69,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 8%;
   z-index: 1;
 }
 
@@ -85,14 +86,84 @@ header {
   text-decoration: none;
 }
 
-.nav-links {
+.nav-bar {
   display: none;
 }
 
-nav .fa {
+.nav-links {
+  position: absolute;
+  background: #6070ffe6;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 420px;
+  top: 0;
+  right: -420px;
+  text-align: left;
+  z-index: 2;
+  transition: 1s;
+}
+
+.categories li {
+  background: #ebebff;
+  border-radius: 10px;
+  color: #6070ff;
+  font-size: 1.2rem;
+  padding: 1px 10px;
+}
+
+.language-list li {
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 0.5rem;
+  bottom: -2.5rem;
+  color: #253858;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 500;
+  gap: 10px;
+  left: 2.5rem;
+  padding: 1rem;
+  position: relative;
+  width: 85%;
+}
+
+.nav-links ul li {
+  list-style: none;
+  position: relative;
+  top: 2rem;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: var(--background-color);
+  line-height: 8rem;
+  position: relative;
+  letter-spacing: 2.2px;
+  font-weight: 700;
+  padding-left: 2.5rem;
+}
+
+nav .fa-times {
+  color: var(--background-color);
+  position: relative;
+  left: 33rem;
+  margin: 1rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+  padding-right: 1rem;
+  padding-top: 0.8rem;
+}
+
+nav .fa-bars {
   color: var(--primary-color);
-  margin-top: 1.8rem;
-  margin-right: 2rem;
+  font-size: 1.7rem;
+  position: relative;
+  top: 1rem;
+  display: flex;
+  left: 10rem;
+  cursor: pointer;
+  margin: 1rem;
 }
 
 /* Headline Section */
@@ -189,16 +260,32 @@ nav .fa {
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
-  height: 57rem;
-  width: 34rem;
+  height: 80%;
+  width: 80vw;
 }
 
 .card--two {
-  height: 61rem;
+  height: 80%;
 }
 
 .card--four {
-  height: 61rem;
+  height: 80%;
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    background: var(--body-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    height: 85%;
+    width: 80vw;
+  }
+
+  .card--two {
+    height: 85%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -221,6 +308,10 @@ nav .fa {
   }
 
   .title__desk {
+    display: none;
+  }
+
+  .title__desk2 {
     display: none;
   }
 
@@ -300,14 +391,6 @@ nav .fa {
   position: relative;
 }
 
-.categories li {
-  background: #ebebff;
-  border-radius: 10px;
-  color: #6070ff;
-  font-size: 1.2rem;
-  padding: 1px 10px;
-}
-
 .btn {
   background: var(--body-color);
   border-radius: 15px;
@@ -346,7 +429,9 @@ nav .fa {
   flex-direction: column;
   background: var(--body-color);
   margin-top: 10rem;
-  height: 130vh;
+  padding-top: 25rem;
+  padding-bottom: 25rem;
+  height: 150vh;
   border-top-right-radius: 75px;
 }
 
@@ -402,7 +487,6 @@ nav .fa {
   left: -1rem;
   position: relative;
   top: 4.5rem;
-  width: 40rem;
 }
 
 .language-list {
@@ -411,22 +495,6 @@ nav .fa {
   gap: 1rem;
   list-style-type: none;
   padding: 1.5rem;
-}
-
-.language-list li {
-  align-items: center;
-  background: #f7f7f9;
-  border-radius: 0.5rem;
-  bottom: -2.5rem;
-  color: #253858;
-  display: flex;
-  font-size: 1.5rem;
-  font-weight: 500;
-  gap: 10px;
-  left: 2.5rem;
-  padding: 1rem;
-  position: relative;
-  width: 85%;
 }
 
 .frameworks-title {
@@ -440,7 +508,6 @@ nav .fa {
   top: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 40rem;
 }
 
 .solid {
@@ -456,25 +523,22 @@ nav .fa {
   font-size: 2rem;
   font-weight: 500;
   justify-content: space-around;
-  left: 0.5rem;
+  left: -3rem;
   position: relative;
   top: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 26.3rem;
 }
 
 .skills-title .fa {
   position: relative;
-  left: 10.5rem;
+  left: 3.7rem;
 }
 
 .form-container {
   background: #fff;
-  margin-top: 0;
-  padding-bottom: 2rem;
   position: relative;
-  top: -4.3rem;
+  top: 0;
 }
 
 .contact-form {
@@ -482,13 +546,14 @@ nav .fa {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4.3rem;
   background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
   background-position: right;
   background-size: 65%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
+  width: 100vw;
   border-top-left-radius: 75px;
+  padding-bottom: 4rem;
 }
 
 .contact-form h2 {
@@ -507,6 +572,7 @@ form {
   margin-right: 3.6rem;
   position: relative;
   bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
 input[type="text"],
@@ -605,7 +671,7 @@ textarea {
 
   /* Animations and Transformations */
 
-  nav ul li::after {
+  .nav-bar li::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -615,7 +681,7 @@ textarea {
     transition: 0.6s;
   }
 
-  nav ul li:hover::after {
+  .nav-bar li:hover::after {
     width: 100%;
   }
 
@@ -696,16 +762,24 @@ textarea {
   /* ---------- */
 
   .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
+    display: none;
   }
 
-  .nav-links li {
+  .nav-bar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4.5rem;
+  }
+
+  .nav-bar li {
+    position: relative;
+    top: -1.2rem;
     padding-right: 6rem;
   }
 
-  .nav-links li a {
+  .nav-bar li a {
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--text-color);
@@ -723,6 +797,7 @@ textarea {
     background-size: 100% 99%;
     border-bottom-left-radius: 175px;
     margin-top: 6.5rem;
+    width: 100vw;
   }
 
   .headline-section h1 {
@@ -732,7 +807,7 @@ textarea {
 
   .headline-section p {
     margin-left: 40rem;
-    width: 50%;
+    width: 45%;
     top: -2rem;
     letter-spacing: 0.03rem;
     font-size: 2rem;
@@ -752,16 +827,12 @@ textarea {
   }
 
   .card {
-    width: 150rem;
-    height: 63rem;
+    width: 83vw;
+    height: 85%;
     display: flex;
     flex-direction: row;
     border-radius: 32px;
     margin-bottom: 5rem;
-  }
-
-  .card__image {
-    display: none;
   }
 
   .card__image2 {
@@ -770,51 +841,47 @@ textarea {
     align-items: center;
     margin: 3rem;
     transition: transform 0.5s;
+    width: 50%;
   }
 
-  .card__title {
-    display: none;
+  .title__desk {
+    display: flex;
+    left: 1rem;
+    position: relative;
+    top: -3rem;
+    height: 10%;
   }
 
-  .card__title4 {
-    top: 3rem;
+  .title__desk2 {
+    display: flex;
+    left: 1rem;
+    position: relative;
+    top: -6rem;
+    height: 10%;
+    width: 90%;
   }
 
   .card-items {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
-    left: -12rem;
-    padding-top: 2.5rem;
+    left: 2rem;
+    top: 6rem;
+    width: 75%;
   }
 
   .subtitle__desk {
-    gap: 2rem;
-    white-space: nowrap;
+    gap: 0.7vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     position: relative;
     left: 1.2rem;
-    width: 24rem;
     bottom: 5rem;
-    align-items: center;
-    font-size: 1.9rem;
-  }
-
-  .card__subtitle {
-    display: none;
-  }
-
-  .card__subtitle2 {
-    display: none;
+    width: 75%;
   }
 
   .card__subtitle3 {
-    gap: 2rem;
-    white-space: nowrap;
+    gap: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -822,10 +889,7 @@ textarea {
     position: relative;
     top: -5rem;
     left: 1.3rem;
-  }
-
-  .card__subtitlemobi {
-    display: none;
+    width: 75%;
   }
 
   .light-text {
@@ -833,14 +897,10 @@ textarea {
     font-weight: 400;
   }
 
-  .para-mobile {
-    display: none;
-  }
-
   .para-desk {
     position: relative;
     left: -0.5rem;
-    width: 62rem;
+    width: 90%;
     font-weight: 400;
     transition: transform 0.5s;
   }
@@ -853,20 +913,17 @@ textarea {
     transition: transform 0.5s;
   }
 
-  .categories {
-    display: none;
-  }
-
   .categories-desk {
     align-items: center;
     bottom: 9rem;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    justify-content: flex-start;
+    gap: 5%;
     left: -4.5rem;
     list-style: none;
     position: relative;
+    white-space: nowrap;
+    width: 90%;
   }
 
   .categories-desk li {
@@ -874,7 +931,7 @@ textarea {
     border-radius: 10px;
     color: #6070ff;
     font-size: 1.2rem;
-    padding: 1px 10px;
+    padding: 1px 3.5px;
   }
 
   .btn {
@@ -888,72 +945,85 @@ textarea {
   .card--two {
     display: flex;
     flex-direction: row-reverse;
+    width: 83vw;
+    height: 85%;
+    border-radius: 32px;
+    margin-bottom: 5rem;
+  }
+
+  .card__title3 {
+    display: flex;
+    left: 1rem;
+    bottom: 7rem;
+    position: relative;
+    height: 10%;
+  }
+
+  .card-items2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5rem;
+    top: 12rem;
+    width: 75%;
+  }
+
+  .card-items3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 1.2rem;
+    top: 8rem;
+    width: 75%;
+  }
+
+  .card__image {
+    display: none;
+  }
+
+  .card__title {
+    display: none;
+  }
+
+  .card__subtitle {
+    display: none;
+  }
+
+  .card__subtitle2 {
+    display: none;
+  }
+
+  .card__subtitlemobi {
+    display: none;
+  }
+
+  .para-mobile {
+    display: none;
+  }
+
+  .categories {
+    display: none;
   }
 
   .card__title2 {
     display: none;
   }
 
-  .card__title3 {
-    position: relative;
-    left: -27rem;
-    white-space: nowrap;
-    padding-top: 5rem;
-  }
-
-  .title__desk {
-    bottom: 3.5rem;
-    display: flex;
-    justify-content: flex-start;
-    left: 1.5rem;
-    position: relative;
-    top: 3rem;
-    white-space: nowrap;
-  }
-
-  .card-items2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    left: 37rem;
-    padding-top: 10.5rem;
-  }
-
-  .card-items3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    left: -31.7rem;
-    padding-top: 6rem;
-  }
-
-  .card-items4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    left: 37rem;
-    padding-top: 8.5rem;
-  }
-
   .about-section {
     margin-top: 15rem;
     border-top-right-radius: 175px;
-    height: 100vh;
+    height: 125vh;
+    width: 100vw;
   }
 
   .about-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 22rem;
-    margin-top: 26rem;
+    position: relative;
+    top: 22rem;
+    left: 14rem;
+    width: 30%;
   }
 
   .about-section h2 {
@@ -974,16 +1044,16 @@ textarea {
   }
 
   .skills-container {
-    width: 68rem;
+    width: 50%;
     position: relative;
-    left: 120rem;
-    bottom: 48rem;
+    left: 80rem;
+    bottom: 35rem;
   }
 
   .language-title {
     display: flex;
-    justify-content: space-between;
     font-size: 2.2rem;
+    width: 50%;
   }
 
   .language-list {
@@ -994,19 +1064,20 @@ textarea {
     gap: 1.5rem;
     position: relative;
     left: -5rem;
+    width: 50%;
   }
 
   .language-list li {
     display: flex;
     flex-direction: column;
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
   }
 
   .frameworks-title {
     display: flex;
-    justify-content: space-between;
     font-size: 2.2rem;
+    width: 50%;
   }
 
   .solid {
@@ -1017,33 +1088,34 @@ textarea {
 
   .skills-title {
     display: flex;
-    justify-content: space-between;
     font-size: 2.2rem;
-    left: -1rem;
-  }
-
-  .skills-title .fa {
-    left: 13.6rem;
+    width: 50.5%;
   }
 
   .form-container {
-    top: -12rem;
-    height: 100vh;
-    width: 100%;
+    height: 120%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 
   .contact-form {
     background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
     background-size: cover;
-    height: 120vh;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     border-top-left-radius: 175px;
+    padding-top: 15rem;
   }
 
   .contact-form h2 {
     font-size: 5.3rem;
     line-height: 6rem;
     letter-spacing: 0.05rem;
+  }
+
+  .contact-form .para-desk {
+    width: 50%;
   }
 
   input[type="text"],
