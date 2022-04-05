@@ -1,7 +1,10 @@
-let navLinks = document.getElementById("navLinks");
+const navLinks = document.getElementById('navLinks');
+
 function showMenu() {
-  navLinks.style.right = "0";
+  const showMenu = document.querySelector('.fa-bars');
+  navLinks.style.right = '0';
 }
 function hideMenu() {
-  navLinks.style.right = "-42rem";
+  const hideMenu = document.querySelector('.fa-times');
+  navLinks.style.right = '-42rem';
 }
