@@ -234,16 +234,16 @@ nav .fa-bars {
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
-  height: 70vh;
+  height: 80%;
   width: 80vw;
 }
 
 .card--two {
-  height: 75vh;
+  height: 80%;
 }
 
 .card--four {
-  height: 75vh;
+  height: 80%;
 }
 
 @media screen and (min-width: 480px) {
@@ -253,18 +253,13 @@ nav .fa-bars {
     display: flex;
     flex-direction: column;
     margin-top: 10rem;
-    height: 90vh;
+    height: 85%;
     width: 80vw;
   }
 
   .card--two {
-    height: 90vh;
+    height: 85%;
   }
-
-  .card--four {
-    height: 90vh;
-  }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -287,6 +282,10 @@ nav .fa-bars {
   }
 
   .title__desk {
+    display: none;
+  }
+
+  .title__desk2 {
     display: none;
   }
 
@@ -805,7 +804,7 @@ textarea {
 
   .headline-section p {
     margin-left: 40rem;
-    width: 50%;
+    width: 45%;
     top: -2rem;
     letter-spacing: 0.03rem;
     font-size: 2rem;
@@ -826,7 +825,7 @@ textarea {
 
   .card {
     width: 83vw;
-    height: 80vh;
+    height: 85%;
     display: flex;
     flex-direction: row;
     border-radius: 32px;
@@ -844,30 +843,37 @@ textarea {
 
   .title__desk {
     display: flex;
-    left: 1.5rem;
+    left: 1rem;
     position: relative;
-    top: 3rem;
+    top: -3rem;
     height: 10%;
+  }
+
+  .title__desk2 {
+    display: flex;
+    left: 1rem;
+    position: relative;
+    top: -6rem;
+    height: 10%;
+    width: 90%;
   }
 
   .card-items {
    display: flex;
-   flex-direction: column;
-   position: relative;
-   top: 15rem;
-   right: 11.8rem;
-   padding-top: 2.5rem;
+    flex-direction: column;
+    position: relative;
+    left: 2rem;
+    top: 6rem;
+    width: 75%;
   }
 
   .subtitle__desk {
-    gap: 1vw;
+    gap: 0.7vw;
     display: flex;
     flex-direction: row;
     position: relative;
     left: 1.2rem;
     bottom: 5rem;
-    align-items: center;
-    font-size: 1.9rem;
     width: 75%;
   }
 
@@ -913,8 +919,8 @@ textarea {
     left: -4.5rem;
     list-style: none;
     position: relative;
-    white-space: wrap;
-    width: 80%;
+    white-space: nowrap;
+    width: 90%;
   }
 
 .categories-desk li {
@@ -922,7 +928,7 @@ textarea {
     border-radius: 10px;
     color: #6070ff;
     font-size: 1.2rem;
-    padding: 1px 10px;
+    padding: 1px 3.5px;
   }
 
   .btn {
@@ -937,7 +943,7 @@ textarea {
     display: flex;
     flex-direction: row-reverse;
     width: 83vw;
-    height: 80vh;
+    height: 85%;
     border-radius: 32px;
     margin-bottom: 5rem;
   }
@@ -963,8 +969,8 @@ textarea {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 22rem;
-    left: -22rem;
+    left: 1.2rem;
+    top: 8rem;
     width: 75%;
   }
 
