@@ -146,8 +146,7 @@ nav .fa-bars {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: var(--body-color)
-    url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
+  background: var(--body-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -257,15 +256,15 @@ nav .fa-bars {
     height: 90vh;
     width: 80vw;
   }
-  
+
   .card--two {
     height: 90vh;
   }
-  
+
   .card--four {
     height: 90vh;
   }
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -550,8 +549,7 @@ nav .fa-bars {
   justify-content: center;
   align-items: center;
   margin-top: 4.3rem;
-  background: var(--primary-color)
-    url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
+  background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
   background-position: right;
   background-size: 65%;
   background-repeat: no-repeat;
@@ -792,8 +790,7 @@ textarea {
 
   .headline-section {
     height: 90vh;
-    background: var(--body-color)
-      url(https://shaqdeff.github.io/Shaquille-Portfolio//images/desktop-header-bg.svg);
+    background: var(--body-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/desktop-header-bg.svg);
     background-position: center;
     background-size: 100% 99%;
     border-bottom-left-radius: 175px;
@@ -852,14 +849,14 @@ textarea {
     top: 3rem;
     height: 10%;
   }
-  
+
   .card-items {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 15rem;
-    right: 11.8rem;
-    padding-top: 2.5rem;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 15rem;
+   right: 11.8rem;
+   padding-top: 2.5rem;
   }
 
   .subtitle__desk {
@@ -885,13 +882,13 @@ textarea {
     left: 1.3rem;
     width: 75%;
   }
-  
+
   .light-text {
     color: #6b778c;
     font-weight: 400;
-  }
+}
 
-  .para-desk {
+.para-desk {
     position: relative;
     left: -0.5rem;
     width: 90%;
@@ -920,7 +917,7 @@ textarea {
     width: 80%;
   }
 
-  .categories-desk li {
+.categories-desk li {
     background: #ebebff;
     border-radius: 10px;
     color: #6070ff;
@@ -974,42 +971,42 @@ textarea {
   .card__image {
     display: none;
   }
-  
+
   .card__title {
     display: none;
-  }
-  
-  .card__subtitle {
-    display: none;
-  }
-  
-  .card__subtitle2 {
-    display: none;
-  }
-  
-  .card__subtitlemobi {
-    display: none;
-  }
-  
-  .para-mobile {
-  display: none;
-  }
-  
-  .categories {
-    display: none;
-  }
-  
-  .card__title2 {
-    display: none;
-  }
+}
 
-  .about-section {
+.card__subtitle {
+    display: none;
+}
+
+.card__subtitle2 {
+    display: none;
+}
+
+.card__subtitlemobi {
+    display: none;
+}
+
+.para-mobile {
+    display: none;
+}
+
+.categories {
+   display: none;
+}
+
+.card__title2 {
+    display: none;
+}
+
+.about-section {
     margin-top: 15rem;
     border-top-right-radius: 175px;
     height: 100vh;
   }
 
-  .about-items {
+.about-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1018,37 +1015,37 @@ textarea {
     margin-top: 26rem;
   }
 
-  .about-section h2 {
+.about-section h2 {
     font-size: 5.3rem;
     line-height: 6rem;
     letter-spacing: 0.05rem;
     margin-left: 1.5rem;
   }
 
-  .icon-list {
+.icon-list {
     margin-left: -0.3rem;
   }
 
-  .btn-about {
+.btn-about {
     width: 17rem;
     height: 6rem;
     margin-left: 1.7rem;
   }
 
-  .skills-container {
+.skills-container {
     width: 68rem;
     position: relative;
     left: 120rem;
     bottom: 48rem;
   }
 
-  .language-title {
+.language-title {
     display: flex;
     justify-content: space-between;
     font-size: 2.2rem;
   }
 
-  .language-list {
+.language-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1058,7 +1055,7 @@ textarea {
     left: -5rem;
   }
 
-  .language-list li {
+.language-list li {
     display: flex;
     flex-direction: column;
     width: 120px;
@@ -1095,13 +1092,12 @@ textarea {
   }
 
   .contact-form {
-    background: var(--primary-color)
-      url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
+    background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
     background-size: cover;
     height: 120vh;
     width: 100%;
-    border-top-left-radius: 175px;
-  }
+   border-top-left-radius: 175px;
+}
 
   .contact-form h2 {
     font-size: 5.3rem;
