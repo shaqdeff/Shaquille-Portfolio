@@ -69,6 +69,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 8%;
   z-index: 1;
 }
 
@@ -85,14 +86,57 @@ header {
   text-decoration: none;
 }
 
-.nav-links {
+.nav-bar {
   display: none;
 }
 
-nav .fa {
+.nav-links {
+  position: absolute;
+  background: #6070ffe6;
+  height: 100vh;
+  width: 42rem;
+  top: 0;
+  right: -42rem;
+  text-align: left;
+  z-index: 2;
+  transition: 1s;
+}
+
+.nav-links ul li {
+  list-style: none;
+  position: relative;
+  top: 2rem;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: var(--background-color);
+  line-height: 8rem;
+  position: relative;
+  letter-spacing: 2.2px;
+  font-weight: 700;
+  padding-left: 2.5rem;
+}
+
+nav .fa-times {
+  color: var(--background-color);
+  position: relative;
+  left: 37rem;
+  margin: 1rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+  padding-right: 1rem;
+  padding-top: 0.8rem;
+}
+
+nav .fa-bars {
   color: var(--primary-color);
-  margin-top: 1.8rem;
-  margin-right: 2rem;
+  font-size: 1.7rem;
+  position: relative;
+  top: 0.8rem;
+  cursor: pointer;
+  margin: 1rem;
 }
 
 /* Headline Section */
@@ -101,7 +145,8 @@ nav .fa {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: var(--body-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
+  background: var(--body-color)
+    url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -189,16 +234,37 @@ nav .fa {
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
-  height: 57rem;
-  width: 34rem;
+  height: 70vh;
+  width: 80vw;
 }
 
 .card--two {
-  height: 61rem;
+  height: 75vh;
 }
 
 .card--four {
-  height: 61rem;
+  height: 75vh;
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    background: var(--body-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    height: 90vh;
+    width: 80vw;
+  }
+  
+  .card--two {
+    height: 90vh;
+  }
+  
+  .card--four {
+    height: 90vh;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -483,7 +549,8 @@ nav .fa {
   justify-content: center;
   align-items: center;
   margin-top: 4.3rem;
-  background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
+  background: var(--primary-color)
+    url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
   background-position: right;
   background-size: 65%;
   background-repeat: no-repeat;
@@ -605,7 +672,7 @@ textarea {
 
   /* Animations and Transformations */
 
-  nav ul li::after {
+  .nav-bar li::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -615,7 +682,7 @@ textarea {
     transition: 0.6s;
   }
 
-  nav ul li:hover::after {
+  .nav-bar li:hover::after {
     width: 100%;
   }
 
@@ -696,16 +763,22 @@ textarea {
   /* ---------- */
 
   .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
+    display: none;
   }
 
-  .nav-links li {
+  .nav-bar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4.5rem;
+  }
+
+  .nav-bar li {
     padding-right: 6rem;
   }
 
-  .nav-links li a {
+  .nav-bar li a {
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--text-color);
@@ -718,11 +791,13 @@ textarea {
 
   .headline-section {
     height: 90vh;
-    background: var(--body-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/desktop-header-bg.svg);
+    background: var(--body-color)
+      url(https://shaqdeff.github.io/Shaquille-Portfolio//images/desktop-header-bg.svg);
     background-position: center;
     background-size: 100% 99%;
     border-bottom-left-radius: 175px;
     margin-top: 6.5rem;
+    width: 100vw;
   }
 
   .headline-section h1 {
@@ -752,16 +827,12 @@ textarea {
   }
 
   .card {
-    width: 150rem;
-    height: 63rem;
+    width: 83vw;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     border-radius: 32px;
     margin-bottom: 5rem;
-  }
-
-  .card__image {
-    display: none;
   }
 
   .card__image2 {
@@ -770,51 +841,40 @@ textarea {
     align-items: center;
     margin: 3rem;
     transition: transform 0.5s;
+    width: 50%;
   }
 
-  .card__title {
-    display: none;
-  }
-
-  .card__title4 {
+  .title__desk {
+    display: flex;
+    left: 1.5rem;
+    position: relative;
     top: 3rem;
+    height: 10%;
   }
-
+  
   .card-items {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
-    left: -12rem;
+    top: 15rem;
+    right: 11.8rem;
     padding-top: 2.5rem;
   }
 
   .subtitle__desk {
-    gap: 2rem;
-    white-space: nowrap;
+    gap: 1vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     position: relative;
     left: 1.2rem;
-    width: 24rem;
     bottom: 5rem;
     align-items: center;
     font-size: 1.9rem;
-  }
-
-  .card__subtitle {
-    display: none;
-  }
-
-  .card__subtitle2 {
-    display: none;
+    width: 75%;
   }
 
   .card__subtitle3 {
-    gap: 2rem;
-    white-space: nowrap;
+    gap: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -822,25 +882,18 @@ textarea {
     position: relative;
     top: -5rem;
     left: 1.3rem;
+    width: 75%;
   }
-
-  .card__subtitlemobi {
-    display: none;
-  }
-
+  
   .light-text {
     color: #6b778c;
     font-weight: 400;
   }
 
-  .para-mobile {
-    display: none;
-  }
-
   .para-desk {
     position: relative;
     left: -0.5rem;
-    width: 62rem;
+    width: 90%;
     font-weight: 400;
     transition: transform 0.5s;
   }
@@ -853,20 +906,17 @@ textarea {
     transition: transform 0.5s;
   }
 
-  .categories {
-    display: none;
-  }
-
   .categories-desk {
     align-items: center;
     bottom: 9rem;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    justify-content: flex-start;
+    gap: 5%;
     left: -4.5rem;
     list-style: none;
     position: relative;
+    white-space: wrap;
+    width: 80%;
   }
 
   .categories-desk li {
@@ -888,57 +938,68 @@ textarea {
   .card--two {
     display: flex;
     flex-direction: row-reverse;
-  }
-
-  .card__title2 {
-    display: none;
+    width: 83vw;
+    height: 80vh;
+    border-radius: 32px;
+    margin-bottom: 5rem;
   }
 
   .card__title3 {
-    position: relative;
-    left: -27rem;
-    white-space: nowrap;
-    padding-top: 5rem;
-  }
-
-  .title__desk {
-    bottom: 3.5rem;
     display: flex;
-    justify-content: flex-start;
-    left: 1.5rem;
+    left: 1rem;
+    bottom: 7rem;
     position: relative;
-    top: 3rem;
-    white-space: nowrap;
+    height: 10%;
   }
 
   .card-items2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
-    left: 37rem;
-    padding-top: 10.5rem;
+    left: 5rem;
+    top: 12rem;
+    width: 75%;
   }
 
   .card-items3 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
-    left: -31.7rem;
-    padding-top: 6rem;
+    top: 22rem;
+    left: -22rem;
+    width: 75%;
   }
 
-  .card-items4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    left: 37rem;
-    padding-top: 8.5rem;
+  .card__image {
+    display: none;
+  }
+  
+  .card__title {
+    display: none;
+  }
+  
+  .card__subtitle {
+    display: none;
+  }
+  
+  .card__subtitle2 {
+    display: none;
+  }
+  
+  .card__subtitlemobi {
+    display: none;
+  }
+  
+  .para-mobile {
+  display: none;
+  }
+  
+  .categories {
+    display: none;
+  }
+  
+  .card__title2 {
+    display: none;
   }
 
   .about-section {
@@ -1033,7 +1094,8 @@ textarea {
   }
 
   .contact-form {
-    background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
+    background: var(--primary-color)
+      url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
     background-size: cover;
     height: 120vh;
     width: 100%;
