@@ -411,7 +411,9 @@ nav .fa-bars {
   flex-direction: column;
   background: var(--body-color);
   margin-top: 10rem;
-  height: 130vh;
+  padding-top: 25rem;
+  padding-bottom: 25rem;
+  height: 150vh;
   border-top-right-radius: 75px;
 }
 
@@ -467,7 +469,6 @@ nav .fa-bars {
   left: -1rem;
   position: relative;
   top: 4.5rem;
-  width: 40rem;
 }
 
 .language-list {
@@ -505,7 +506,6 @@ nav .fa-bars {
   top: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 40rem;
 }
 
 .solid {
@@ -521,25 +521,22 @@ nav .fa-bars {
   font-size: 2rem;
   font-weight: 500;
   justify-content: space-around;
-  left: 0.5rem;
+  left: -3rem;
   position: relative;
   top: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 26.3rem;
 }
 
 .skills-title .fa {
   position: relative;
-  left: 10.5rem;
+  left: 3.7rem;
 }
 
 .form-container {
   background: #fff;
-  margin-top: 0;
-  padding-bottom: 2rem;
   position: relative;
-  top: -4.3rem;
+  top: 0;
 }
 
 .contact-form {
@@ -547,13 +544,14 @@ nav .fa-bars {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4.3rem;
   background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
   background-position: right;
   background-size: 65%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
+  width: 100vw;
   border-top-left-radius: 75px;
+  padding-bottom: 4rem;
 }
 
 .contact-form h2 {
@@ -572,6 +570,7 @@ form {
   margin-right: 3.6rem;
   position: relative;
   bottom: 1rem;
+ margin-bottom: 10rem;
 }
 
 input[type="text"],
@@ -1009,16 +1008,18 @@ textarea {
 .about-section {
     margin-top: 15rem;
     border-top-right-radius: 175px;
-    height: 100vh;
+    height: 125vh;
+    width: 100vw;
   }
 
 .about-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 22rem;
-    margin-top: 26rem;
+    position: relative;
+    top: 22rem;
+    left: 14rem;
+    width: 30%;
   }
 
 .about-section h2 {
@@ -1038,17 +1039,17 @@ textarea {
     margin-left: 1.7rem;
   }
 
-.skills-container {
-    width: 68rem;
+  .skills-container {
+    width: 50%;
     position: relative;
-    left: 120rem;
-    bottom: 48rem;
+    left: 80rem;
+    bottom: 35rem;
   }
 
 .language-title {
     display: flex;
-    justify-content: space-between;
     font-size: 2.2rem;
+    width: 50%;
   }
 
 .language-list {
@@ -1059,19 +1060,20 @@ textarea {
     gap: 1.5rem;
     position: relative;
     left: -5rem;
+    width: 50%;
   }
 
 .language-list li {
     display: flex;
     flex-direction: column;
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
   }
 
   .frameworks-title {
     display: flex;
-    justify-content: space-between;
     font-size: 2.2rem;
+    width: 50%;
   }
 
   .solid {
@@ -1082,33 +1084,35 @@ textarea {
 
   .skills-title {
     display: flex;
-    justify-content: space-between;
     font-size: 2.2rem;
-    left: -1rem;
-  }
-
-  .skills-title .fa {
-    left: 13.6rem;
+    width: 50.5%;
   }
 
   .form-container {
-    top: -12rem;
-    height: 100vh;
-    width: 100%;
+    height: 120%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 
   .contact-form {
     background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
     background-size: cover;
-    height: 120vh;
-    width: 100%;
-   border-top-left-radius: 175px;
+    height: 100%;
+    width: 100vw;
+    border-top-left-radius: 175px;
+    padding-top: 15rem;
+
 }
 
   .contact-form h2 {
     font-size: 5.3rem;
     line-height: 6rem;
     letter-spacing: 0.05rem;
+  }
+
+  .contact-form .para-desk {
+    width: 50%;
   }
 
   input[type="text"],
