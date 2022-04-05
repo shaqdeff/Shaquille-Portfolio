@@ -95,9 +95,9 @@ header {
   background: #6070ffe6;
   backdrop-filter: blur(5px);
   height: 100vh;
-  width: 42rem;
+  width: 400px;
   top: 0;
-  right: -42rem;
+  right: -400px;
   text-align: left;
   z-index: 2;
   transition: 1s;
@@ -159,7 +159,9 @@ nav .fa-bars {
   color: var(--primary-color);
   font-size: 1.7rem;
   position: relative;
-  top: 0.8rem;
+  top: 1rem;
+  display: flex;
+  left: 10rem;
   cursor: pointer;
   margin: 1rem;
 }
@@ -772,6 +774,8 @@ textarea {
   }
 
   .nav-bar li {
+    position: relative;
+    top: -1.2rem;
     padding-right: 6rem;
   }
 
