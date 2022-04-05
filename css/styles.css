@@ -103,6 +103,30 @@ header {
   transition: 1s;
 }
 
+.categories li {
+  background: #ebebff;
+  border-radius: 10px;
+  color: #6070ff;
+  font-size: 1.2rem;
+  padding: 1px 10px;
+}
+
+.language-list li {
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 0.5rem;
+  bottom: -2.5rem;
+  color: #253858;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 500;
+  gap: 10px;
+  left: 2.5rem;
+  padding: 1rem;
+  position: relative;
+  width: 85%;
+}
+
 .nav-links ul li {
   list-style: none;
   position: relative;
@@ -365,14 +389,6 @@ nav .fa-bars {
   position: relative;
 }
 
-.categories li {
-  background: #ebebff;
-  border-radius: 10px;
-  color: #6070ff;
-  font-size: 1.2rem;
-  padding: 1px 10px;
-}
-
 .btn {
   background: var(--body-color);
   border-radius: 15px;
@@ -479,22 +495,6 @@ nav .fa-bars {
   padding: 1.5rem;
 }
 
-.language-list li {
-  align-items: center;
-  background: #f7f7f9;
-  border-radius: 0.5rem;
-  bottom: -2.5rem;
-  color: #253858;
-  display: flex;
-  font-size: 1.5rem;
-  font-weight: 500;
-  gap: 10px;
-  left: 2.5rem;
-  padding: 1rem;
-  position: relative;
-  width: 85%;
-}
-
 .frameworks-title {
   align-items: center;
   display: flex;
@@ -570,7 +570,7 @@ form {
   margin-right: 3.6rem;
   position: relative;
   bottom: 1rem;
- margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 input[type="text"],
@@ -858,7 +858,7 @@ textarea {
   }
 
   .card-items {
-   display: flex;
+    display: flex;
     flex-direction: column;
     position: relative;
     left: 2rem;
@@ -891,9 +891,9 @@ textarea {
   .light-text {
     color: #6b778c;
     font-weight: 400;
-}
+  }
 
-.para-desk {
+  .para-desk {
     position: relative;
     left: -0.5rem;
     width: 90%;
@@ -922,7 +922,7 @@ textarea {
     width: 90%;
   }
 
-.categories-desk li {
+  .categories-desk li {
     background: #ebebff;
     border-radius: 10px;
     color: #6070ff;
@@ -979,40 +979,40 @@ textarea {
 
   .card__title {
     display: none;
-}
+  }
 
-.card__subtitle {
+  .card__subtitle {
     display: none;
-}
+  }
 
-.card__subtitle2 {
+  .card__subtitle2 {
     display: none;
-}
+  }
 
-.card__subtitlemobi {
+  .card__subtitlemobi {
     display: none;
-}
+  }
 
-.para-mobile {
+  .para-mobile {
     display: none;
-}
+  }
 
-.categories {
-   display: none;
-}
-
-.card__title2 {
+  .categories {
     display: none;
-}
+  }
 
-.about-section {
+  .card__title2 {
+    display: none;
+  }
+
+  .about-section {
     margin-top: 15rem;
     border-top-right-radius: 175px;
     height: 125vh;
     width: 100vw;
   }
 
-.about-items {
+  .about-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1022,18 +1022,18 @@ textarea {
     width: 30%;
   }
 
-.about-section h2 {
+  .about-section h2 {
     font-size: 5.3rem;
     line-height: 6rem;
     letter-spacing: 0.05rem;
     margin-left: 1.5rem;
   }
 
-.icon-list {
+  .icon-list {
     margin-left: -0.3rem;
   }
 
-.btn-about {
+  .btn-about {
     width: 17rem;
     height: 6rem;
     margin-left: 1.7rem;
@@ -1046,13 +1046,13 @@ textarea {
     bottom: 35rem;
   }
 
-.language-title {
+  .language-title {
     display: flex;
     font-size: 2.2rem;
     width: 50%;
   }
 
-.language-list {
+  .language-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1063,7 +1063,7 @@ textarea {
     width: 50%;
   }
 
-.language-list li {
+  .language-list li {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1102,8 +1102,7 @@ textarea {
     width: 100vw;
     border-top-left-radius: 175px;
     padding-top: 15rem;
-
-}
+  }
 
   .contact-form h2 {
     font-size: 5.3rem;
