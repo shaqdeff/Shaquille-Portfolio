@@ -120,3 +120,37 @@ function updateModalWindow(index) {
   liveBtn.href = portfolio[index].liveButton;
   codeBtn.href = portfolio[index].codeButton;
 }
+
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
+
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modal);
+    openModal(modal);
+    updateModalWindow(Array.prototype.indexOf.call(openModalButtons, button));
+  });
+});
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
+
+closeModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});

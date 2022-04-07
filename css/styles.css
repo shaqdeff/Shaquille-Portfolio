@@ -802,6 +802,7 @@ textarea {
   white-space: nowrap;
   width: 15rem;
   text-align: center;
+  background-color: var(--body-color);
 }
 
 .about-section p:last-of-type {
@@ -1513,6 +1514,7 @@ textarea {
   .btn-contact {
     left: 1.2rem;
     width: 16rem;
+    background: var(--body-color);
   }
 
   .btn-contact:hover {
