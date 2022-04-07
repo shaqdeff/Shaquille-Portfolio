@@ -127,6 +127,15 @@ header {
   width: 85%;
 }
 
+.modal-categories li {
+  background: #ebebff;
+  border-radius: 10px;
+  color: #6070ff;
+  font-size: 1.3rem;
+  padding: 1px 5px;
+  margin-bottom: 15px;
+}
+
 .nav-links ul li {
   list-style: none;
   position: relative;
@@ -539,15 +548,6 @@ nav .fa-bars {
   max-width: 100%;
 }
 
-.modal-categories li {
-  background: #ebebff;
-  border-radius: 10px;
-  color: #6070ff;
-  font-size: 1.3rem;
-  padding: 1px 5px;
-  margin-bottom: 15px;
-}
-
 .modal-buttons {
   display: flex;
   justify-content: flex-end;
@@ -559,7 +559,6 @@ nav .fa-bars {
   background: none;
   border-radius: 10px;
   border: 1px solid #396df2;
-  bottom: 8rem;
   color: #396df2;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
@@ -1222,7 +1221,7 @@ textarea {
     background: none;
     font-size: 3.2rem;
     font-weight: 600;
-    color: #67798E;
+    color: #67798e;
     outline: none;
     cursor: pointer;
     position: relative;
@@ -1301,7 +1300,6 @@ textarea {
     background: none;
     border-radius: 10px;
     border: 1px solid #396df2;
-    bottom: 8rem;
     color: #396df2;
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
@@ -1529,3 +1527,5 @@ textarea {
     font-size: 2rem;
   }
 }
+
+/* ---- */
