@@ -11,7 +11,7 @@ const codeBtn = document.querySelector('.code-btn');
 const portfolio = [
   {
     name: 'Tonic',
-    image: './images/popup-tonic.svg',
+    image: 'images/popup-tonic.svg',
     description: ` Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's
               standard dummy text ever since the 1500s, when an unknown
@@ -35,7 +35,7 @@ const portfolio = [
   },
   {
     name: 'Multi-Post Stories',
-    image: './images/multipost.svg',
+    image: 'images/multipost.svg',
     description: ` Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's
               standard dummy text ever since the 1500s, when an unknown
@@ -59,7 +59,7 @@ const portfolio = [
   },
   {
     name: 'Facebook 360',
-    image: './images/facebook.svg',
+    image: 'images/facebook.svg',
     description: ` Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's
               standard dummy text ever since the 1500s, when an unknown
@@ -83,7 +83,7 @@ const portfolio = [
   },
   {
     name: 'Uber Navigation',
-    image: './images/uber.svg',
+    image: 'images/uber.svg',
     description: ` Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's
               standard dummy text ever since the 1500s, when an unknown
