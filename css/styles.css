@@ -172,8 +172,7 @@ nav .fa-bars {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: var(--body-color)
-    url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
+  background: var(--body-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/header-shapes.svg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -738,8 +737,7 @@ nav .fa-bars {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--primary-color)
-    url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
+  background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-shapes-mobile.svg);
   background-position: right;
   background-size: 65%;
   background-repeat: no-repeat;
@@ -986,8 +984,7 @@ textarea {
 
   .headline-section {
     height: 90vh;
-    background: var(--body-color)
-      url(https://shaqdeff.github.io/Shaquille-Portfolio//images/desktop-header-bg.svg);
+    background: var(--body-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/desktop-header-bg.svg);
     background-position: center;
     background-size: 100% 99%;
     border-bottom-left-radius: 175px;
@@ -1172,192 +1169,192 @@ textarea {
     width: 75%;
   }
 
- /* Modal Window Desktop */
- .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%) scale(0);
-  transition: 400ms ease-in-out;
-  border: 1px solid rgb(247, 247, 247);
-  border-radius: 1rem;
-  z-index: 10;
-  background: var(--body-color);
-  width: 115.6rem;
-  max-width: 80%;
-  height: 116.3rem;
-  max-height: 87%;
-  overflow-y: auto;
-}
+  /* Modal Window Desktop */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%) scale(0);
+    transition: 400ms ease-in-out;
+    border: 1px solid rgb(247, 247, 247);
+    border-radius: 1rem;
+    z-index: 10;
+    background: var(--body-color);
+    width: 115.6rem;
+    max-width: 80%;
+    height: 116.3rem;
+    max-height: 87%;
+    overflow-y: auto;
+  }
 
-.modal.active {
-  transform: translate(-50%, -45%) scale(1);
-}
+  .modal.active {
+    transform: translate(-50%, -45%) scale(1);
+  }
 
-.modal-header {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
+  .modal-header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 
-.title {
-  position: relative;
-  bottom: 25px;
-  font-size: 3.5rem;
-}
+  .title {
+    position: relative;
+    bottom: 25px;
+    font-size: 3.5rem;
+  }
 
-.subtitle {
-  gap: 1vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 1.9rem;
-  position: fixed;
-  top: 6rem;
-  left: 2.3rem;
-  max-width: 75%;
-}
+  .subtitle {
+    gap: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 1.9rem;
+    position: fixed;
+    top: 6rem;
+    left: 2.3rem;
+    max-width: 75%;
+  }
 
-.close-btn {
-  border: none;
-  background: none;
-  font-size: 3.2rem;
-  font-weight: 600;
-  color: #67798E;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  bottom: 2.5rem;
-  padding-right: 1rem;
-  transition: background 0.7s ease-in;
-}
+  .close-btn {
+    border: none;
+    background: none;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #67798E;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 2.5rem;
+    padding-right: 1rem;
+    transition: background 0.7s ease-in;
+  }
 
-.close-btn:hover {
-  color: var(--text-color);
-}
+  .close-btn:hover {
+    color: var(--text-color);
+  }
 
-.modal-body {
-  padding: 1rem 1.5rem;
-}
+  .modal-body {
+    padding: 1rem 1.5rem;
+  }
 
-.modal-body img {
-  width: 120.8rem;
-  height: 470px;
-  max-width: 80%;
-  max-height: 70%;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -12%);
-  object-fit: cover;
-  margin-top: 5rem;
-}
+  .modal-body img {
+    width: 120.8rem;
+    height: 470px;
+    max-width: 80%;
+    max-height: 70%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -12%);
+    object-fit: cover;
+    margin-top: 5rem;
+  }
 
-.modal-desc {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;  
-}
+  .modal-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-.modal-desc p {
-  width: 70%;
-  position: relative;
-  bottom: 6rem;
-  padding: 4.5rem;
-}
+  .modal-desc p {
+    width: 70%;
+    position: relative;
+    bottom: 6rem;
+    padding: 4.5rem;
+  }
 
-.modal-categories {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 7%;
-  align-content: flex-start;
-  position: relative;
-  bottom: 0.3rem;
-  border-bottom: 2px solid #ebecf0;
-  padding-bottom: 1rem;
-  height: 10%;
-  width: 28%;
-}
+  .modal-categories {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7%;
+    align-content: flex-start;
+    position: relative;
+    bottom: 0.3rem;
+    border-bottom: 2px solid #ebecf0;
+    padding-bottom: 1rem;
+    height: 10%;
+    width: 28%;
+  }
 
-.modal-categories li {
-  background: #ebebff;
-  border-radius: 10px;
-  color: #6070ff;
-  font-size: 1.3rem;
-  padding: 1px 5px;
-  margin-bottom: 15px;
-}
+  .modal-categories li {
+    background: #ebebff;
+    border-radius: 10px;
+    color: #6070ff;
+    font-size: 1.3rem;
+    padding: 1px 5px;
+    margin-bottom: 15px;
+  }
 
-.modal-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 20px;
-  margin-left: 6.5rem;
-}
+  .modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-left: 6.5rem;
+  }
 
-.modal-btn {
-  background: none;
-  border-radius: 10px;
-  border: 1px solid #396df2;
-  bottom: 8rem;
-  color: #396df2;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 0.03rem;
-  outline: none;
-  padding: 1rem 0.3rem;
-  position: relative;
-  bottom: 30rem;
-  right: 5rem;
-  text-align: center;
-  width: 12%;
-  white-space: normal;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 7%;
-  cursor: pointer;
-  transition: background 0.4s ease-in;
-}
+  .modal-btn {
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #396df2;
+    bottom: 8rem;
+    color: #396df2;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    outline: none;
+    padding: 1rem 0.3rem;
+    position: relative;
+    bottom: 30rem;
+    right: 5rem;
+    text-align: center;
+    width: 12%;
+    white-space: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    cursor: pointer;
+    transition: background 0.4s ease-in;
+  }
 
-.modal-btn:hover {
-  background: var(--primary-color);
-  box-shadow: 3px 6px 16px rgba(64, 83, 252, 0.24);
-  color: var(--body-color);
-}
+  .modal-btn:hover {
+    background: var(--primary-color);
+    box-shadow: 3px 6px 16px rgba(64, 83, 252, 0.24);
+    color: var(--body-color);
+  }
 
-.modal-btn:active {
-  background: #2230d2;
-}
+  .modal-btn:active {
+    background: #2230d2;
+  }
 
-.modal-btn:disabled {
-  background: #5e6c84;
-}
+  .modal-btn:disabled {
+    background: #5e6c84;
+  }
 
- #overlay {
- position: fixed;
- opacity: 0;
- transition: 400ms ease-in-out;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background-color: #c1c7d0cf;
- backdrop-filter: blur(5px);
- pointer-events: none;
-}
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 400ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c1c7d0cf;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+  }
 
- #overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 
   .card__image {
     display: none;
@@ -1482,8 +1479,7 @@ textarea {
   }
 
   .contact-form {
-    background: var(--primary-color)
-      url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
+    background: var(--primary-color) url(https://shaqdeff.github.io/Shaquille-Portfolio//images/contact-form-bg.svg);
     background-size: cover;
     height: 100%;
     width: 100vw;
