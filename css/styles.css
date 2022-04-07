@@ -147,7 +147,7 @@ header {
 nav .fa-times {
   color: var(--background-color);
   position: relative;
-  left: 33rem;
+  left: 36rem;
   margin: 1rem;
   font-size: 2.2rem;
   cursor: pointer;
@@ -392,7 +392,7 @@ nav .fa-bars {
 }
 
 .btn {
-  background: var(--body-color);
+  background: none;
   border-radius: 15px;
   border: 1px solid #396df2;
   bottom: 8rem;
@@ -406,6 +406,7 @@ nav .fa-bars {
   position: relative;
   text-align: center;
   width: 12rem;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -421,6 +422,8 @@ nav .fa-bars {
 .btn:disabled {
   background: #5e6c84;
 }
+
+/* Modal Window */
 
 /* About Section */
 .about-section {
@@ -976,6 +979,8 @@ textarea {
     top: 8rem;
     width: 75%;
   }
+
+  /* Modal Window */
 
   .card__image {
     display: none;
