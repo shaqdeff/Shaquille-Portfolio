@@ -23,3 +23,13 @@ inputFields.forEach((input) => {
     localStorage.setItem('formData', JSON.stringify(formData));
   });
 });
+
+const textArea = document.getElementById('contact-message');
+  textArea.addEventListener('change', (event) => {
+    let formData = JSON.parse(localStorage.getItem('formData'));
+    if (!formData) {
+      formData = { name: '', email: '', message: '' };
+    }
+    formData.message = event.target.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
