@@ -207,7 +207,7 @@
           that you need built or a project that needs coding. I’d love to help
           with it.
         </p>
-        <form action="https://formspree.io/f/mrgjlwwj" method="POST">
+        <form action="https://formspree.io/f/meqnrqjw" method="POST" id="form">
           <ul>
             <li>
               <input
@@ -219,7 +219,13 @@
               />
             </li>
             <li>
-              <input type="email" name="email" placeholder="Email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                id="email"
+              />
             </li>
             <li>
               <textarea
@@ -229,10 +235,12 @@
               ></textarea>
             </li>
           </ul>
+          <span id="err-msg"></span>
           <button class="btn btn-contact" type="submit">Get In Touch</button>
         </form>
       </section>
     </footer>
+    <script src="javascript/form.js"></script>
     <script src="javascript/menu.js"></script>
     <script src="javascript/portfolio.js"></script>
   </body>
