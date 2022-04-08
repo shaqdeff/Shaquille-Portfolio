@@ -10,3 +10,16 @@ form.addEventListener('submit', (event) => {
     errorMessage.innerText = 'Please type your e-mail in lowercase';
   }
 });
+
+// Local Storage
+const inputFields = document.querySelectorAll('input');
+inputFields.forEach((input) => {
+  input.addEventListener('change', (event) => {
+    let formData = JSON.parse(localStorage.getItem('formData'));
+    if (!formData) {
+      formData = { name: '', email: '', message: '' };
+    }
+    formData[event.target.name] = event.target.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
