@@ -1024,6 +1024,11 @@ textarea {
     flex-direction: row;
     border-radius: 32px;
     margin-bottom: 5rem;
+    transition: 0.4s;
+  }
+
+  .card:hover {
+    box-shadow: 3px 5px 25px rgba(64, 83, 252, 0.24);
   }
 
   .card__image2 {
