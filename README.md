@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple steps.
 git clone https://github.com/shaqdeff/Shaquille-Portfolio.git
 ```
 
-- Once the files are on your machine, open the **Microverse-Portfolio** folder in [Visual Studio Code](https://code.visualstudio.com/download).
+- Once the files are on your machine, open the **Shaquille-Portfolio** folder in [Visual Studio Code](https://code.visualstudio.com/download).
 
 ## Deployment
 
