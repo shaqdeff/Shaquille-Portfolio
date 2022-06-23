@@ -1,6 +1,6 @@
 # Shaquille-Portfolio
 
-This is a personal portfolio project created using a Figma template.
+This is a personal portfolio project created using a Figma template. The project is among the first Microverse projects I did. 
 
 ## Built With
 
